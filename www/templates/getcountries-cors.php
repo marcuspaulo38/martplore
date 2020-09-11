@@ -36,9 +36,15 @@ while($rowT = mysqli_fetch_assoc($resultT))
     
     $volume1 = preg_replace('/[^0-9]/', '', $dadosT[33]);
     $temperatura1 = str_replace("-", "", $dadosT[44]);
+   
+    
+    
     
 }
+echo json_encode($countries = array($volume1.$temperatura1));
+
 //echo json_encode($countries = array($tipo));
- echo json_encode($countries = array("Volume: ".$volume1." Temperatura: ".$temperatura1));
+ //echo json_encode($countries = array($volume1.$temperatura1));
+ 
 ?>
 
