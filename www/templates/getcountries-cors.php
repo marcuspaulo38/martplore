@@ -39,6 +39,6 @@ while($rowT = mysqli_fetch_assoc($resultT))
     
 }
 //echo json_encode($countries = array($tipo));
- echo json_encode($countries = array($volume1.$temperatura1));
+ echo json_encode($countries = array("Volume: ".$volume1." Temperatura: ".$temperatura1));
 ?>
 
